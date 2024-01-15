@@ -1,0 +1,56 @@
+.about{
+   height: 100dvh;
+   width: 100vw;
+   flex-direction: column;
+}
+.about h1{
+   margin-top: 5rem;
+   margin-bottom: 20px;
+   z-index: 5;
+   color: #ffffff;
+}
+.about-contain{
+   height: 100%;
+   justify-content: space-between;
+}
+.about-info{
+   flex-direction: column;
+   width: 45%;
+   margin-left: 10rem;
+   height: 100%;
+   background-color: #9db2bf59;
+   padding: 0px 50px;
+}
+.about-contain img{
+   width: 30rem;
+   border-radius: 50%;
+   margin-left: 5rem;
+}
+.about-info h2{
+   font-size: 2.4em;
+   margin-bottom: 25px;
+}
+.about-info h2 span{
+   color: #164863;
+}
+.about-info .dumy-para{
+   font-size: 1.5em;
+}
+.about-info .circle{
+   position: absolute;
+   width: 15rem;
+   height: 15rem;
+   border-radius: 50%;
+   top: 100%;
+   left: 42.5%;
+   background-color: rgb(206, 16, 16);
+}
+
+
+.about-info .circle.c2{
+   top: 185%;
+   left: 80%;
+   width: 13rem;
+   height: 13rem;
+   background-color: rgb(0, 91, 130);
+}

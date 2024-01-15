@@ -1,0 +1,173 @@
+.dashboard{
+   height: 100vh;
+   width: 100vw;
+}
+.info.doner-info{
+   position: relative;
+   transform: translateY(-65%);
+   z-index: 5;
+}
+.info.doner-info .cards{
+   margin-top: 0;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+
+}
+.info.doner-info .cards i{
+   font-size: 7em;
+   margin-top: 4rem;
+   display: none;
+}
+.info.doner-info .cards div{
+   background-color: #005f5f;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+   padding: 0px 15px;
+   border-radius: 15px;
+   margin-top: 4rem;
+   height: 10rem;
+   transition: 0.3s all ease-in-out;
+   display: none;
+}
+.info.doner-info .cards div:hover{
+   background-color: #007474;
+   box-shadow: inset 4px 4px 5px rgb(31, 31, 31);
+}
+
+.up-down-btn i{
+   margin-top: 18px;
+}
+
+.info.doner-info.down{
+   transform: translateY(0);
+}
+
+.info.doner-info .cards i.show,
+.info.doner-info .cards div.show{
+   display: flex;
+}
+
+.doner-contain{
+   position: relative;
+   transform: translateY(-10%);
+   height: 90%;
+   z-index: 3;
+}
+
+.doner-contain .Card{
+   margin-left: 30px;
+   width: 13rem;
+   background-color: transparent;
+   height: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.4em;
+   font-weight: 700;
+   box-shadow: 3px 3px 7px 2px grey;
+   border-radius: 10px;
+   cursor: pointer;
+}
+   
+.Card .date{
+   color: rgb(0, 194, 0);
+}
+.Card .no-date{
+   color: rgb(249, 6, 6);
+}
+
+.doner-contain .Card.num{
+   background-color: rgb(0, 128, 187);
+   color: white;
+}
+.doner-contain .Card.book{
+   width: 15rem;
+}
+.doner-contain .Card.dt{
+   width: 17rem;
+   padding: 0px 15px;
+}
+
+.doner-contain .main{
+   height: 50%;
+}
+.doner-contain .main span{
+   font-size: 4em;
+   font-weight: 700;
+   opacity: 0.3;
+}
+.f2{
+   margin-top: 100px;
+}
+
+.f2 .input{
+   align-content: center;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+.f2 .input input{
+   width: 13rem;
+}
+.f2 form .input.in2, .f2 form .input.dt{
+   margin-left: 20px;
+}
+.f2 form .input select{
+   width: 20rem;
+}
+
+.appointment{
+   margin-top: 100px;
+}
+.appointment .header{
+   justify-content: space-around;
+   background-color: rgb(38, 141, 209);
+}
+.appointment .header span{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+   height: 2.5rem;
+   font-size: 1em;   
+   gap: 10px;
+   border: 1px solid black;
+   color: white;
+}
+
+.appointment .record{
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 5px;
+   background-color: rgb(227, 227, 227);
+}
+.appointment .record span{
+   height: 3.5rem;
+   font-size: 1.1em;
+   width: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.appointment .record:hover{
+   background-color: rgb(206, 206, 206);
+}
+.record .cancle button{
+   border: 1px solid rgb(63, 63, 63);
+   box-shadow: none;
+   background-color: red;
+}
+.record .pdf i{
+   font-size: 1.7em;
+   color:  rgb(173, 1, 1);
+   cursor: pointer;
+}
+.appointment .not-found{
+   font-size: 5em;
+   font-weight: 800;
+   justify-content: center;
+   opacity: 0.4;
+}
+

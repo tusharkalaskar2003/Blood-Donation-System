@@ -1,0 +1,36 @@
+:root{
+  --dk-red: #FF6666;
+  --md-red: #FF8989;
+  --ml-red: #FCAEAE;
+  --lt-red: #FEB4B4;
+  --bg-light: #FFEADD;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--bg-light); */
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  align-items: start;
+}
+
+h1, h2, h3, p, span, ul, li{
+  margin: 0;
+  padding: 0;
+}
+
+.flex{display: flex;}
+.ali-cent{align-items: center;}
+.just-cent{justify-content: center;}
+.rel{position: relative;}
+.abs{position: absolute;}
+
+
+body::-webkit-scrollbar {
+  display: none;
+  /* width: 10px; */
+}

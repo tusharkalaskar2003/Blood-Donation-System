@@ -1,0 +1,452 @@
+.dashboard{
+   height: 100vh;
+   width: 100vw;
+   z-index: 6;
+   /* filter: blur(10px); */
+   /* top: 0; */
+}
+.info{
+   background: linear-gradient(#007676, #004949);
+   margin-top: -3.4%;
+   width: 100%;
+   height: 35%;
+   flex-direction: column;
+   justify-content: space-between;
+   /* border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px; */
+   /* box-shadow: 0px 20px 0px #003434; */
+   transform: translateY(-65%);
+   transition: 0.3s all ease-in-out;
+   z-index: 6;
+}
+
+.info .cards{
+   /* gap: 20px; */
+   height: 80%;
+   justify-content: space-around;
+   font-size: 1.2rem;
+   color: white;
+   margin-top: 3%;
+}
+
+.logo{
+   width: 15%;
+   display: none;
+   transition: 0.4s all ease-in-out;
+}
+.logo img{
+   width: 50%;
+   border-radius: 50%;
+}
+.logo img:hover{
+   opacity: 0.8;
+   cursor: pointer;
+   /* box-shadow: inset 3px 3px 4px rgb(94, 94, 94)/; */
+}
+
+.hospital-tab{
+   flex-direction: column;
+   padding: 15px;
+   height: 60%;
+   background-color: #007676;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+   transition: 0.4s ease-in-out;
+   display: none;
+}
+
+.admin-tab{
+   flex-direction: column;
+   padding: 15px;
+   height: 60%;
+   background-color: #007676;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.403) 2.4px 2.4px 3.2px;
+   transition: 0.4s ease-in-out;
+   display: none;
+
+}
+.hospital-tab:hover,
+.admin-tab:hover{
+   box-shadow: rgba(0, 0, 0, 0.525) 2.4px 2.4px 3.2px inset;
+   background-color: #006161;
+}
+.up-down-btn{
+   font-size: 2.3rem;
+   /* opacity: 0.6; */
+}
+.up-down-btn i{
+   cursor: pointer;
+   color: white;
+   border-radius: 10px;
+   /* width: 2.5rem; */
+}
+.up-down-btn i:hover{
+   /* border: 2px solid black; */
+   background-color: #2c698a;
+}
+
+.vis{
+   display: flex;
+}
+.slide{
+   transform: translateY(0);
+   
+}
+.contaner-das{
+   position: relative;
+   height: 100%;
+   width: 100%;
+   transition: 0.3s all ease-in-out;
+}
+
+.detail-card{
+   width: 100%;
+   height: 100%;
+   transform: translateY(-20%);
+   flex-direction: column;
+   z-index: 5;
+}
+
+.detail-card .card{
+   width: 90%;
+   height: 30%;
+   background-color: #FF8989;
+   border-radius: 10px;
+   overflow: hidden;
+   z-index: 5;
+}
+.card svg{
+   position: absolute;
+   top: 0;
+   width: 100%;
+   /* height: 30%; */
+   color: var(--ml-red);
+   border-radius: 10px;
+   z-index: 5;
+}
+.contain{
+   height: 100%;
+   color: white;
+   justify-content: space-around;
+   z-index: 7;
+}
+.card .contain svg{
+   position: relative;
+   height: 60%;
+   font-size: 1.3em;
+   width: 100%;
+   color: white;
+}
+.card .contain .tot{
+   width: 9%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.card .contain .tot span{
+   font-weight: 800;
+   font-size: 2em;
+   /* margin-top: -20   px; */
+}
+.card .contain .tot h1{
+   margin-top: -16px;
+   font-weight: 800;
+   font-size: 7em;
+   height: 8.7rem;
+}
+.hom{
+   flex-direction: column;
+   width: 100%;
+   height: 50%;
+}
+.hom span{
+   font-weight: 800;
+   font-size: 5em;
+   opacity: 0.5;
+   margin-top: 4%;
+}
+.hom button{
+   margin-top: 20px;
+   width: 15rem;
+   height: 4rem;
+   font-size: 1.5em;
+   background: #164863;
+   outline: none;
+   border: none;
+   transition: 0.3s all ease-in-out;
+}
+.hom button:hover{
+   box-shadow: inset 2px 2px 3px rgb(92, 92, 92);
+}
+#add-btn{
+   margin-right: 10px;
+}
+.x{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card .contain .tot .x h1{
+   /* left: 0;  */
+   /* border: 1px solid black; */
+   /* color: transparent; */
+   /* right: 0; */
+   font-size: 2.5em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 15px;
+}
+
+.blur{
+   filter: blur(5px);
+   /* z-index: -1; */
+   color: #483285;
+}
+
+.request-list{
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   transform: translateY(-10%);
+}
+.request-list .head{
+   margin-bottom: 3px;
+   justify-content: space-between;
+   width: 100%;
+   overflow: hidden;
+   margin-bottom: 5px;
+   height: 2.8em;
+   /* border: 2px solid black; */
+}
+.lister{
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   /* filter: blur(10px); */
+}
+.head h2{
+   margin-left: 10px;
+}
+.head .search{
+   margin-right: 5rem;
+   border: 1.5px solid black;
+   height: 90%;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border-radius: 20px;
+   width: 15rem;
+}
+.head .search input{
+   outline: none;
+   border: none;
+   margin-top: -2px;
+}
+.head .search i{
+   font-size: 1.5em;
+   
+}
+hr{
+   height: 2px;
+   color: black;
+   background-color: black;
+}
+.request-list .detail{
+   width: 90%;
+}
+
+.card-det{
+   justify-content: space-around;
+   gap: 4px;
+   margin-bottom: 5px;
+}
+.card-det span{
+   background-color: #00000048;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   font-weight: 700;
+}
+.request-list .cardp{
+   justify-content: space-around;
+   gap: 4px;
+   margin-bottom: 5px;
+}
+.request-list .cardp span{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 4em;
+   background-color: #00000014;
+   /* transition: 0.2s all ease-in-out; */
+}
+.cardp:hover span{
+   background-color:  #0000002c;
+   ;
+}
+
+.cardp .conf{
+   border: 2px solid black;
+   background-color: rgb(6, 98, 6);
+}
+.cardp .conf:hover{
+   background-color: rgb(14, 112, 14);
+}
+
+.line{
+   height: 2px;
+   width: 100%;
+   background-color: black;
+}
+
+.back{
+   width: 100%;
+}
+.back i{
+   padding-left: 10px;
+   padding-right: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 3rem;
+   font-size:  2em;
+   height: 3rem;
+   background-color: #007676;
+   border-top-right-radius: 2rem;
+   border-bottom-right-radius: 2rem;
+   color: white;
+   cursor: pointer;
+}
+.back i:hover{
+   background-color: #008b8b;
+}
+
+.confirmation{
+   background: #79dec236;
+   height: 50%;
+   border-radius: 20px;
+   width: 30%;
+   box-shadow: 3px 3px 6px black;
+   transform: translateY(-130%);
+   transition: 0.3s all ease-in-out;
+}
+.confirmation form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2em;
+}
+
+.confirmation form .btn{
+   background-color: transparent;
+   color: rgba(0, 0, 0, 0.397);
+   margin-top: 15px;
+   transition: 0.3s all ease-in-out;
+   width: 8em;
+   margin-left: 10px;
+}
+.confirmation form div{
+   margin-bottom: 15px;
+}
+.confirmation .liter input{
+   width: 15rem;
+}
+.confirmation .checkbox input{
+   width: 20px;  
+   border-radius: 50%; 
+}
+.confirmation .liter{
+   flex-direction: column;
+}
+
+.confirmation form button.green{
+   background: green;
+   color: white;
+}
+
+.confirmation form span.cancel{
+   border: 2px solid black;
+   padding: 3px 15px;
+   margin-top: 15px;
+   border-radius: 11px;
+   background: rgba(255, 0, 0, 0.779);
+   color: white;
+   cursor: pointer;
+}
+
+.false{
+   display: flex;
+}
+.true{
+   display: none;
+}
+
+.get-down{
+   transform: translateY(0);
+}
+
+
+.edit-btn{
+   font-size: 1.3em;
+   margin-top: 12px;
+   position: relative;
+   margin-left: 95%;
+   cursor: pointer;
+}
+.edit-btn:hover{
+   box-shadow: 2px 2px 6px 1px black;
+}
+
+.popup{
+   background-color: rgb(179, 202, 241);
+   height: 25rem;
+   width: 25rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.1em;
+   left: calc(50% - 25rem/2);
+   top: 20%;
+   border-radius: 20px;
+   box-shadow: 4px 4px 8px rgb(66, 66, 66);
+   z-index: 8;
+   transition: 0.3s all ease-in-out;
+}
+.popup form{
+   flex-direction: column;
+}
+.popup h3{
+   margin-bottom: 20px;
+   font-size: 1.4em;
+}
+.popup .btn{
+   margin-top: 20px;
+}
+.popup form input{
+   width: 20rem;
+}
+
+.popup .cancel{
+   margin-left: 10px;
+   padding: 5px 20px;
+   border-radius: 10px;
+   margin-top: 15px;
+   border: 2px solid black;
+   background-color: rgb(197, 16, 16);
+   color: white;
+   cursor: pointer;
+}
+
+.translate{
+   transform: translateY(-140%);
+}
+
